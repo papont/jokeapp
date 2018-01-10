@@ -8,8 +8,14 @@ public class JokeServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokeServiceImpl() {
-        chuckNorrisQuotes = new ChuckNorrisQuotes();
+    //отключено для демонстрации java config и xml config
+//    public JokeServiceImpl() {
+//        chuckNorrisQuotes = new ChuckNorrisQuotes();
+//    }
+
+
+    public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
